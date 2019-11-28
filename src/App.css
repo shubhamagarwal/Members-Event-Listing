@@ -1,0 +1,75 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+/* .App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #09d3ac;
+} */
+
+#members {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  font-size: 15px;
+}
+
+#members td, #members th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#members tr:nth-child(even){background-color: #f2f2f2;}
+
+#members tr:hover {background-color: #ddd;}
+
+#members th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#events {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  font-size: 15px;
+  width: 40%;
+}
+
+#events td, #events th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#events tr:nth-child(even){background-color: #f2f2f2;}
+
+#events tr:hover {background-color: #ddd;}
+
+#events th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
