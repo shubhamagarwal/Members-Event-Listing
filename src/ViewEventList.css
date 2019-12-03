@@ -1,0 +1,22 @@
+.member {
+    color: red;
+    font-weight: bold;
+}
+
+.empty {
+    font-weight: bold;
+    font: 14px arial, sans-serif;
+}
+
+.listing {
+    font-weight: bold;
+    font: 14px arial, sans-serif;
+}
+
+.content {
+    font: 15px arial, sans-serif;
+}
+
+.popup-content {
+    width: 30% !important;
+}

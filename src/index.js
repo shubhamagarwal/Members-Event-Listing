@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Events from './Members_Events';
+import Events from './MembersEventsList';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Events />, document.getElementById('root'));

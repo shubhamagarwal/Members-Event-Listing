@@ -2,14 +2,12 @@
     font-size: 12px;
   }
   .modal > .header {
-    width: 100%;
     border-bottom: 1px solid gray;
     font-size: 18px;
     text-align: center;
     padding: 5px;
   }
   .modal > .content {
-    width: 100%;
     padding: 10px 5px;
   }
   .modal > .actions {
@@ -30,4 +28,12 @@
     background: #ffffff;
     border-radius: 18px;
     border: 1px solid #cfcece;
+  }
+
+  .select-container {
+    padding: 10px 0
+  }
+
+  .selectbox {
+    padding: 10px 0;
   }
