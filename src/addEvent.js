@@ -18,7 +18,6 @@ const AddNewEvent = (props) => {
     })
   })
 
-  console.log(eventsList, memberId);
   return (
     <Popup open>
       {close => (

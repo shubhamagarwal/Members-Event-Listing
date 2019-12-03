@@ -12,8 +12,6 @@ const ViewEventList = (props) => {
   if(eventList === undefined) {
     eventList = []
   }
-
-  console.log(eventList, addedEventList, memberId)
     return (
         <Popup open>
         {close => (
