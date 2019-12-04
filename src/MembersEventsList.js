@@ -14,6 +14,7 @@ function Events() {
   const [memberName, setMemberName] = useState('');
   const [addedEventList, setAddedEventList] = useState({});
   const [viewEvent, showEventPopUp] = useState(false);
+  const [eventLabel, setSelectedEvent] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -86,6 +87,7 @@ function Events() {
       ...eventList,
       [memberId]: [...events, event.label]
     }
+    setSelectedEvent(event.label);
     setAddedEventList(eventObj);
   }
 
@@ -104,6 +106,7 @@ function Events() {
         memberName={memberName}
         getSelectedEvents={getSelectedEvents}
         closePopUp={closePopUp}
+        eventLabel={eventLabel}
       /> : ''}
       {viewEvent ? <ViewEventList
         addedEventList={addedEventList}

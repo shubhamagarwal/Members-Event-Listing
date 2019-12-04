@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import Popup from "reactjs-popup";
 import Select from 'react-select';
@@ -8,7 +9,8 @@ const AddNewEvent = (props) => {
     memberId,
     memberName,
     getSelectedEvents,
-    closePopUp
+    closePopUp,
+    eventLabel
   } = props
   const eventsList = [];
   events.map(event => {
@@ -17,12 +19,11 @@ const AddNewEvent = (props) => {
       value: event._id
     })
   })
-
+  const label = eventLabel !== '' ? `${eventLabel} event added successfully` : '';
   return (
     <Popup open>
-      {close => (
         <div className="modal">
-          <a className="close" onClick={(e) => closePopUp(e, memberId)}>
+          <a href={null} className="close" onClick={(e) => closePopUp(e, memberId)}>
             &times;
             </a>
           <div className="header"> Add Event </div>
@@ -31,13 +32,13 @@ const AddNewEvent = (props) => {
               <div className="select-container">Select an event to add:
                 <Select
                   className="selectbox"
-                  value="hkjkl"
+                  value="event"
                   options={eventsList}
                   onChange={(e) => getSelectedEvents(e, memberId)}
               /></div>
           </div>
+          <div className="content member">{label}</div>
         </div>
-      )}
     </Popup>
   )
 }
